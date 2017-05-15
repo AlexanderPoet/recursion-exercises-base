@@ -8,7 +8,7 @@ describe('dom-util', () => {
     it('visits the correct number of nodes', () => {
       const data = fs.readFileSync('./test/fixtures/broccoli.json', 'utf-8');
       const broccoli = JSON.parse(data);
-
+      
       let count = 0;
       visitAllNodes(broccoli, () => {
         count++;
